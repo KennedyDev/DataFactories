@@ -40,14 +40,27 @@
 						"type": "AzureSqlSink"
 					},
 					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
 					"validateDataConsistency": false,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Warning",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "AzureBlobStorageKennedy",
+								"type": "LinkedServiceReference"
+							}
+						}
+					},
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
 							{
 								"source": {
 									"name": "Senior TE / Impact Fund",
-									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -59,7 +72,6 @@
 							{
 								"source": {
 									"name": "Scope",
-									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -71,7 +83,6 @@
 							{
 								"source": {
 									"name": "Single Award?",
-									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -83,7 +94,6 @@
 							{
 								"source": {
 									"name": "Country",
-									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -95,7 +105,6 @@
 							{
 								"source": {
 									"name": "Role",
-									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -107,7 +116,6 @@
 							{
 								"source": {
 									"name": "Name",
-									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -119,7 +127,6 @@
 							{
 								"source": {
 									"name": "Oracle Code",
-									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
