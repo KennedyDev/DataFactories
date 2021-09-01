@@ -1,0 +1,9 @@
+{
+	"name": "kennedyadf",
+	"location": "southafricanorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "47461312-5fcd-4a0b-911e-4cf5a6d4833c",
+		"tenantId": "37ef3d19-1651-4452-b761-dc2414bf0416"
+	}
+}
