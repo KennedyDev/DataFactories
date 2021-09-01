@@ -1,0 +1,45 @@
+{
+	"name": "DestinationDataset_hk2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Senior TE / Impact Fund",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Scope",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Single Award?",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Role",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OracleCode",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TechnicalExpertRaw"
+		}
+	}
+}
