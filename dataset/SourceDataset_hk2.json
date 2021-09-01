@@ -1,0 +1,52 @@
+{
+	"name": "SourceDataset_hk2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageKennedy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "OracleCodes.txt",
+				"container": "logdata"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Senior TE / Impact Fund",
+				"type": "String"
+			},
+			{
+				"name": "Scope",
+				"type": "String"
+			},
+			{
+				"name": "Single Award?",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Role",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Oracle Code",
+				"type": "String"
+			}
+		]
+	}
+}
